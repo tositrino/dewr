@@ -1,0 +1,32 @@
+#
+# Cargo.toml - rust manifest file
+#
+#  module_xx - rust course module xx
+#  copyright (c) 2024-2025 ths <development@ths.one>
+#
+#  file name     : Cargo.toml
+#  file version  : 0.1.0
+#  file created  : 2025/02/12
+#  last change   : 2025/02/12
+#
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+#
+[package]
+name = "module_xx"
+version = "0.2.0"
+edition = "2021"
+description = "rust course module xx."
+authors = ["ths <development@ths.one>"]
+homepage = "https://ths.one"
+repository = "https://github.com/tositrino/dewr.git"
+keywords = ["rust", "data", "engineering", "module xx" ]
+categories = ["tools"]
+readme = "README.md"
+exclude = ["intermediate_data/"]
+publish = false
+
+[workspace]
+exclude = ["intermediate_data"]
+
+[dependencies]
+rand = "0.9.0"
