@@ -2,7 +2,7 @@
 //! So far it only provides a function to read a line from stdin.
 //! # Examples:
 //! ```
-//! use lab_template::read_stdin;
+//! use module_01::read_stdin;
 //! let input = read_stdin();
 //! ```
 //! # Panics:
@@ -18,7 +18,7 @@ pub mod dummy;
 /// It will panic if it fails to read a line with a message "Failed to read input line".
 /// # Examples:
 /// ```
-/// use lab_template::read_stdin;
+/// use module_01::read_stdin;
 /// let input = read_stdin();
 /// ```
 pub fn read_stdin() -> String {

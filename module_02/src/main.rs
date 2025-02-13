@@ -1,4 +1,4 @@
-use lab_template::colors::{Color, ColorString};
+use module_02::colors::{Color, ColorString};
 
 fn main() {
     let mut color_string = ColorString {

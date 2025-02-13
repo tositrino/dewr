@@ -1,14 +1,14 @@
 //! Dummy module
 //! # Examples:
 //! ```
-//! use lab_template::dummy::dummy;
+//! use module_03::dummy::dummy;
 //! println!("{}", dummy());
 //! ```
 
 /// Returns a string with word "dummy" in it
 /// # Examples:
 /// ```
-/// use lab_template::dummy::dummy;
+/// use module_03::dummy::dummy;
 /// println!("{}", dummy());
 /// ```
 pub fn dummy() -> String {

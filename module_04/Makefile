@@ -1,7 +1,7 @@
 #
 # project setup
 #
-PROJECT_NAME = lab_template
+PROJECT_NAME = module_04
 PROJECT_SYSTEM = $(shell uname -s | tr [:upper:] [:lower:])
 
 uname_m := $(shell uname -m)

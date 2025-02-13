@@ -1,4 +1,4 @@
-use module_xx::colors::{Color, ColorString};
+use module_01::colors::{Color, ColorString};
 
 fn main() {
     let mut color_string = ColorString {

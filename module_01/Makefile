@@ -1,7 +1,7 @@
 #
 # project setup
 #
-PROJECT_NAME = module_xx
+PROJECT_NAME = module_01
 PROJECT_SYSTEM = $(shell uname -s | tr [:upper:] [:lower:])
 
 uname_m := $(shell uname -m)

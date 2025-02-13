@@ -1,7 +1,7 @@
 //! Colorized output utilities for the terminal using ANSI escape codes.
 //! # Examples:
 //! ```
-//! use lab_template::colors::*;
+//! use module_03::colors::*;
 //! println!("{}{}{}", red("Red"), green("Green"), blue("Blue"));
 //! ```
 
@@ -10,7 +10,7 @@ use rand::random;
 /// Returns a string with the ANSI escape code for red.
 /// # Examples:
 /// ```
-/// use lab_template::colors::*;
+/// use module_03::colors::*;
 /// println!("{}", red("Red"));
 /// ```
 pub fn red(s: &str) -> String {
@@ -19,7 +19,7 @@ pub fn red(s: &str) -> String {
 /// Returns a string with the ANSI escape code for green.
 /// # Examples:
 /// ```
-/// use lab_template::colors::*;
+/// use module_03::colors::*;
 /// println!("{}", green("Green"));
 /// ```
 pub fn green(s: &str) -> String {
@@ -28,7 +28,7 @@ pub fn green(s: &str) -> String {
 /// Returns a string with the ANSI escape code for blue.
 /// # Examples:
 /// ```
-/// use lab_template::colors::*;
+/// use module_03::colors::*;
 /// println!("{}", blue("Blue"));
 /// ```
 pub fn blue(s: &str) -> String {
@@ -37,7 +37,7 @@ pub fn blue(s: &str) -> String {
 /// Returns a string with the ANSI escape code for bold text.
 /// # Examples:
 /// ```
-/// use lab_template::colors::*;
+/// use module_03::colors::*;
 /// println!("{}", bold("Bold"));
 /// ```
 pub fn bold(s: &str) -> String {
@@ -46,7 +46,7 @@ pub fn bold(s: &str) -> String {
 /// Returns a string with the ANSI escape code to reset the text settings.
 /// # Examples:
 /// ```
-/// use lab_template::colors::*;
+/// use module_03::colors::*;
 /// println!("{}", reset("Reset"));
 /// ```
 pub fn reset(s: &str) -> String {

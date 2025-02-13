@@ -1,7 +1,7 @@
 #
 # Cargo.toml - rust manifest file
 #
-#  lab_template - rust course lab template
+#  module_02 - rust course module 02
 #  copyright (c) 2024-2025 ths <development@ths.one>
 #
 #  file name     : Cargo.toml
@@ -12,14 +12,14 @@
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 #
 [package]
-name = "lab_template"
+name = "module_02"
 version = "0.2.0"
 edition = "2021"
-description = "rust course lab template."
+description = "rust course module 02."
 authors = ["ths <development@ths.one>"]
 homepage = "https://ths.one"
 repository = "https://github.com/tositrino/dewr.git"
-keywords = ["rust", "data", "engineering", "lab template" ]
+keywords = ["rust", "data", "engineering", "module 02" ]
 categories = ["tools"]
 readme = "README.md"
 exclude = ["intermediate_data/"]

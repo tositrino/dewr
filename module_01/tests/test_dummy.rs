@@ -1,4 +1,4 @@
-use lab_template::dummy::dummy;
+use module_01::dummy::dummy;
 
 #[test]
 fn test_dummy() {

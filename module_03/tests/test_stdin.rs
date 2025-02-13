@@ -1,4 +1,4 @@
-use lab_template::colors::{Color, ColorString};
+use module_03::colors::{Color, ColorString};
 
 #[test]
 fn test_stdin() {

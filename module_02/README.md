@@ -1,8 +1,8 @@
-# dewr - lab template
+# dewr - module 02
 
-Data Engineering with Rust - lab template
+Data Engineering with Rust - module 02
 
-  | lab template ||
+  | module 02 ||
   |:--|:--|
   | file version  | 0.1.0 |
   | file created  | 2025/02/12 |
@@ -14,16 +14,13 @@ Data Engineering with Rust - lab template
   - ```rustc --version```
 
 ## setup
+   there is a tool to copy the template projects and do the necessary replacements
    ```
-   cp -a lab_template module_xx
-   cd module_xx
-   sed -i -e 's/lab\_template/module_xx/g' -e 's/lab\ template/module xx/g' Cargo.toml
-   sed -i -e 's/lab\_template/module_xx/g' -e 's/lab\ template/module xx/g' Makefile
-   sed -i -e 's/lab\_template/module_xx/g' -e 's/lab\ template/module xx/g' README.md
-   sed -i -e 's/lab\_template/module_xx/g' -e 's/lab\ template/module xx/g' README.src/main.rs
+   tools/new_project.sh <new_project>
    ```
-   Note: do not remove the backslashes above, otherwise the commands will also be 
-         replaced and rendered wrong.
+   <new_project> must be the project name used in Cargo.toml, without space etc. The project name
+                 is then derived by replacing "_" by " "
+   
 
 ## compile and run the template
   ```
