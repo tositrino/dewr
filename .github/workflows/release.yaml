@@ -19,7 +19,7 @@ jobs:
         override: true
 
     - name: Install dependencies
-            run: sudo apt-get update && sudo apt-get install -y awk coreutils grep sed 
+            run: sudo apt-get update && sudo apt-get install -y gawk coreutils grep sed 
 
     - name: build binary release
       run: make release

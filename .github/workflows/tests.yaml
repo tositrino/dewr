@@ -19,7 +19,7 @@ jobs:
         override: true
 
     - name: Install dependencies
-      run:       run: sudo apt-get update && sudo apt-get install -y awk coreutils grep sed 
+      run:       run: sudo apt-get update && sudo apt-get install -y gawk coreutils grep sed 
 
     - name: run tests
       run: make tests
