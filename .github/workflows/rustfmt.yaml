@@ -19,7 +19,7 @@ jobs:
         override: true
 
     - name: Install dependencies
-      run: sudo apt-get update && sudo apt-get install -y gawk ggrep gsed gsort
+            run: sudo apt-get update && sudo apt-get install -y awk coreutils grep sed 
 
     - name: run formatter
       run: make format
