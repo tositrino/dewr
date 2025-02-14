@@ -1,9 +1,12 @@
 #
-# project setup
+# Makefile for rust projects
 #
+
+# project setup
 PROJECT_NAME = lab_template
 PROJECT_SYSTEM = $(shell uname -s | tr [:upper:] [:lower:])
 
+# system dependent settings
 uname_m := $(shell uname -m)
 ifeq ($(uname_m),i386)
   PROJECT_ARCH = x32
@@ -22,6 +25,7 @@ ifeq ($(uname_m),aarch64)
   LD_ARCH=$(uname_m)
 endif
   
+# tools
 ASM := as
 CC := gcc
 CFLAGS := -Wall
@@ -36,13 +40,13 @@ ifeq ($(CUR_SYSTEM),darwin)
   AWK   := gawk
   SORT := gsort
 else
-  GREP  := ggrep
-  SED   := gsed
-  AWK   := gawk
-  SORT := gsort
+  GREP  := grep
+  SED   := sed
+  AWK   := awk
+  SORT := sort
 endif
 
-.PHONY: help all clean info init
+.PHONY: help all clean check info init
 
 # targets
 
@@ -83,9 +87,9 @@ clean: ## Clean the project
 doc:  ## create project documentation using cargo
 	cargo doc
 
-fmt:  ## Format the project using cargo
+format:  ## Format the project using cargo
 	@rustup component add rustfmt 2> /dev/null
-	cargo fmt
+	cargo fmt --quiet
 
 info: ## Display project information
 	@echo "[INFO]"
@@ -105,11 +109,14 @@ init: ## Initialize the project
 
 lint: ## Lint the project using cargo
 	@rustup component add clippy 2> /dev/null
-	cargo clippy
+	cargo clippy --quiet
+
+release: ## Run the project using cargo
+	cargo build --release
 
 run: ## Run the project using cargo
 	cargo run
 
 test: ## Test the project using cargo
-	cargo test
+	cargo test  --quiet
 

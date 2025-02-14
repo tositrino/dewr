@@ -5,8 +5,8 @@ Data Engineering with Rust - module 02
   | module 02 ||
   |:--|:--|
   | file version  | 0.1.0 |
-  | file created  | 2025/02/12 |
-  | last change   | 2025/02/12 |
+  | file created  | 2025/02/11 |
+  | last change   | 2025/02/14 |
 
 ## check rust and cargo version
 
