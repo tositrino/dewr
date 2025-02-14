@@ -1,0 +1,25 @@
+name: Clippy
+
+on: [push,pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        profile: minimal
+        components: clippy, rustfmt
+        override: true
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y gawk ggrep gsed gsort
+
+    - name: Run clippy
+      run: make lint
