@@ -1,4 +1,8 @@
 use module_01::colors::{Color, ColorString};
+use module_01::collections::collections;
+use module_01::freq_count::freq_count;
+use module_01::lang_weights::lang_weights;
+use module_01::cwc::ufc_graph;
 
 fn main() {
     let mut color_string = ColorString {
@@ -35,4 +39,9 @@ fn main() {
 
     let mut color_string = ColorString::default();
     color_string.reset();
+    collections();
+    freq_count();
+    lang_weights();
+    ufc_graph();
+
 }

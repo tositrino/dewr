@@ -29,4 +29,7 @@ publish = false
 exclude = ["intermediate_data"]
 
 [dependencies]
+graphviz-rust = "0.9.3"
+petgraph = "0.7.1"
 rand = "0.9.0"
+rasciigraph = "0.2.0"
