@@ -13,6 +13,8 @@ use std::io::{BufRead, BufReader};
 pub mod colors;
 pub mod config;
 pub mod dummy;
+pub mod fruitsalad;
+pub mod datarace;
 
 /// This function reads a line from stdin and returns it as a String.
 /// It will panic if it fails to read a line with a message "Failed to read input line".

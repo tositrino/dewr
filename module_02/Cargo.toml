@@ -6,14 +6,14 @@
 #
 #  file name     : Cargo.toml
 #  file version  : 0.1.0
-#  file created  : 2025/02/12
-#  last change   : 2025/02/12
+#  file created  : 2025/02/25
+#  last change   : 2025/02/25
 #
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 #
 [package]
 name = "module_02"
-version = "0.2.0"
+version = "0.1.0"
 edition = "2021"
 description = "rust course module 02."
 authors = ["ths <development@ths.one>"]
@@ -29,4 +29,5 @@ publish = false
 exclude = ["intermediate_data"]
 
 [dependencies]
+clap = { version = "4.5.31", features = ["derive"] }
 rand = "0.9.0"

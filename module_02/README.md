@@ -6,7 +6,7 @@ Data Engineering with Rust - module 02
   |:--|:--|
   | file version  | 0.1.0 |
   | file created  | 2025/02/11 |
-  | last change   | 2025/02/14 |
+  | last change   | 2025/02/25 |
 
 ## check rust and cargo version
 
@@ -21,6 +21,7 @@ Data Engineering with Rust - module 02
    <new_project> must be the project name used in Cargo.toml, without space etc. The project name
                  is then derived by replacing "_" by " "
    
+   Note: clap has to be added using ```cargo add clap --features derive```
 
 ## compile and run the template
   ```
