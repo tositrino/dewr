@@ -1,5 +1,5 @@
 use module_03::colors::{Color, ColorString};
-use module_03::dp::{demo_dp};
+use module_03::csvwrite::{csvwrite};
 
 fn color_demo() -> i32{
     let mut result:i32 = -1;
@@ -41,9 +41,9 @@ fn color_demo() -> i32{
     result
 }
 
-fn dp_demo() -> i32 {
+fn csv_demo() -> i32 {
     let result:i32 = 0;
-    demo_dp();
+    csvwrite();
     result
 }
 
@@ -52,8 +52,8 @@ fn main() {
     let mut result:i32 = -1;
     if opts.mode.expect("REASON").as_str() == "color" {
         result = color_demo();
-    } else if opts.mode.expect("REASON").as_str() == "dp" {
-        result = dp_demo();
+    } else if opts.mode.expect("REASON").as_str() == "csv" {
+        result = csv_demo();
     }
     result
 }
